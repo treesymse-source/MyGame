@@ -1,0 +1,10 @@
+git int *//idk what it does
+git add test.txt *// add this in snapshot so u dont lose it
+git commit -m "Comment: add test.txt
+git remote add origin https/blablabla
+git branch -M main *// i think M stands for main or master !
+git ls-files *// see the list of files in ur snap
+git rm --cached program.exe *// for a program
+git rm --cached "file.txt" *// for a files
+git rm --cached -r feels/  *//for a directory
+git push -u origin main *// push ur things
