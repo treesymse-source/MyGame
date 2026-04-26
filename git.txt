@@ -8,3 +8,13 @@ git rm --cached program.exe *// for a program
 git rm --cached "file.txt" *// for a files
 git rm --cached -r feels/  *//for a directory
 git push -u origin main *// push ur things
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+*//if u want to speed up things COPY/PAST//*
+
+
+git status /for checking
+git add -A /add the whole current folder to ur push list
+git commit -m "bla bla bla" /adding a comment
+git push origin main /pushing files
