@@ -13,7 +13,51 @@
        
 #include <stdio.h>
 
+//ask the op
+
+void calcul()
+{
+       int number1,number2;
+       char op;
+
+       //Input from the user
+       printf("Enter The Firts Number : \n");
+       scanf("%d",&number1);
+       printf("Enter The Second Number : \n");
+       scanf("%d",&number2);
+
+
+
+       //clear
+       getchar();
+
+       printf("What opertation would u like ? :\n");
+       scanf("%c",&op);
+
+       switch(op)
+       {
+              case '-':
+                  printf("%d - %d = %d",number1, number2 , number1 - number2);
+                  break;
+              case '+':
+                  printf("%d + %d = %d", number1, number2 , number1 + number2);
+                  break;
+              case '*':
+                  printf("%d * %d = %d", number1, number2 , number1 * number2);
+                  break;
+              case '/':
+                  if(number1&&number2 <= 0){
+                     printf("Cant divide by 0");
+                  }else if(number1&&number2 > 0){
+                     printf("%d / %d = %d", number1, number2 , number1 / number2);
+                  } else printf("Invalid OP");
+                  
+       }
+
+}
+
 int main()
 {
-    
+    calcul();
+    return 0;
 }
