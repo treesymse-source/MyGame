@@ -16,13 +16,13 @@ int main()
     // Gets The User name and the Nickname
     char name[50] ;
     printf("What is Ur name? :");
-    fgets(name,50,stdin);
+    fgets(name,sizeof(name),stdin);
     name[strcspn(name, "\n")] = '\0';
 
 
     char nick_name[50] ;
     printf("What is Ur nick_name? :");
-    fgets(nick_name,50,stdin);
+    fgets(nick_name,sizeof(nick_name),stdin);
     nick_name[strcspn(nick_name, "\n")] = '\0';
 
 
