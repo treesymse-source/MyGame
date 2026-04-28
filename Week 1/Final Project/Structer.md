@@ -40,3 +40,7 @@
 - use functions next time !
 - that was pretty ez i guess !
 
+### Final Product
+
+- A bug was issues durning the terminal was opend
+- finaly

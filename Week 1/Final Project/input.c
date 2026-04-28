@@ -12,14 +12,14 @@
 
 void ask_num()
 {
-    printf("Enter ur First number? \n");
+    printf("Enter ur First number? ");
     scanf("%lf", &num1);
-    printf("Enter ur Second Number?\n");
+    printf("Enter ur Second Number?");
     scanf("%lf", &num2);
 }
 
 void ask_operation()
 {
-    printf("What Operation would u like to use? \n");
-    scanf("%c", &op);
+    printf("What Operation would u like to use? ");
+    scanf(" %c", &operation);
 }

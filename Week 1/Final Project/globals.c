@@ -10,4 +10,4 @@
 
 double num1;
 double num2;
-char op;
+char operation;

@@ -1,9 +1,9 @@
-CC = clang
+CC = gcc
 CFLAGS = -Wall -Wextra -std=c11
-SRC = main.c ask_numbers.c calculator.c globals.c
+SRC = main.c input.c calculator.c globals.c
 OBJ = $(SRC:.c=.o)
 
-TARGET = program
+TARGET = Maining
 
 all: $(TARGET)
 

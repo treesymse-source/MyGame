@@ -12,6 +12,6 @@
 // extern mean (i guess) it store num1&&num2 from an outside files to use!
 extern double num1;
 extern double num2;
-extern char op;
+extern char operation;
 
 #endif

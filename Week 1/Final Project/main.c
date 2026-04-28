@@ -13,28 +13,27 @@
 
 void calculation()
 {
-    ask_num;
-    ask_operation;
+    ask_num();
+    ask_operation();
 
-    switch(op)
-       {
-              case '-':
-                  sub(num1, num2);
-                  break;
-              case '+':
-                  add(num1, num2);
-                  break;
-              case '*':
-                  multiply(num1, num2);
-                  break;
-              case '/':
-                  if (num2 == 0 || num1 == 0) {
-                     printf("Cant divide by 0\n");
-                     calculation();       //loop when trying divide by 0
-                  } else {
-                     divide(num1, num2);
-                  }
-                  break;        
+    switch(operation){
+        case '-':
+            sub(num1, num2);
+            break;
+        case '+':
+            add(num1, num2);
+            break;
+        case '*':
+            multiply(num1, num2);
+            break;
+        case '/':
+            if (num2 == 0 || num1 == 0) {
+             printf("Cant divide by 0\n");
+             calculation();     
+            }  else {
+             divide(num1, num2);
+            }
+            break;        
        }
 }
 
@@ -43,18 +42,19 @@ int main()
     printf("Welcome\n");
 
     calculation();
+   
 
-    printf("Whould u like to Try again? y/n : \n");
+    printf("Would u like to Try again? y/n : \n");
     char anwser;
+    scanf(" %c", &anwser);
     if (anwser == 'y' || anwser == 'Y'){
         calculation();
+    
     }else {
         printf("Thanks For testing \n");
     }
 
     return 0;
-    
-
     
 }
 
