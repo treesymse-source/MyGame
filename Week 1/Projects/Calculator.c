@@ -15,7 +15,7 @@
 
 //ask the op
 
-void calcul()
+void calculator()
 {
        int number1,number2;
        char op;
@@ -46,18 +46,25 @@ void calcul()
                   printf("%d * %d = %d", number1, number2 , number1 * number2);
                   break;
               case '/':
-                  if(number1&&number2 <= 0){
-                     printf("Cant divide by 0");
-                  }else if(number1&&number2 > 0){
+                  if (number2 == 0) {
+                     printf("Cant divide by 0\n");
+                  } else {
                      printf("%d / %d = %d", number1, number2 , number1 / number2);
-                  } else printf("Invalid OP");
+                  }
+                  return calculator();
+                  break;
+              default:
+                  printf("Invalid OP\n");
+                  return calculator();
+                  break;
+                 
                   
        }
 
 }
 
 int main()
-{
-    calcul();
+{    //call the function
+    calculator();
     return 0;
 }
