@@ -51,11 +51,11 @@ void calculator()
                   } else {
                      printf("%d / %d = %d", number1, number2 , number1 / number2);
                   }
-                  return calculator();
+                  return calculator(); //loop when trying divide by 0
                   break;
               default:
                   printf("Invalid OP\n");
-                  return calculator();
+                  return calculator(); //loop if user input was wrong
                   break;
                  
                   
